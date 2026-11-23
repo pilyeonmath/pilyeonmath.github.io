@@ -197,7 +197,9 @@
   .art-axis + .k, .art-axis ~ h3 { max-width: 60%; }
   .art-flow { right: 36px; top: 50%; width: 240px; margin-top: -40px; }
   .art-target { right: -60px; top: 50%; width: 360px; margin-top: -180px; }
-  .art-circle { right: -70px; bottom: -70px; width: 220px; }
+  .art-circle { right: -100px; bottom: -100px; width: 220px; }
+  .tile.w2.black p { max-width: 72%; }
+  .tile.w6 h3, .tile.w6 p { max-width: 56%; }
 
   /* Lineup */
   .lineup { padding: 120px 0; }
@@ -295,7 +297,9 @@
     .bento { grid-template-columns: minmax(0, 1fr); }
     .tile.w2, .tile.w4, .tile.w6 { grid-column: auto; }
     .tile { min-height: 0; }
-    .tile.w4 h3, .tile.w4 p { max-width: none; }
+    .tile.w4 h3, .tile.w4 p, .tile.w6 h3, .tile.w6 p, .tile.w2.black p { max-width: none; }
+    .tile .art.art-target { position: relative; right: auto; top: auto; margin: 28px -36px -150px auto; width: 240px; order: 2; }
+    .tile .art.art-circle { position: relative; right: auto; bottom: auto; margin: 20px -60px -80px auto; width: 160px; order: 2; }
     .tile .art.art-pyth, .tile .art.art-flow { position: relative; right: auto; bottom: auto; top: auto; margin: 28px 0 0; }
     .art-pyth { width: 180px; }
     .lineup-grid { grid-template-columns: minmax(0, 1fr); gap: 72px; }
@@ -334,7 +338,7 @@
     <div class="wrap">
       <h1 class="eyebrow reveal">필연수학학원</h1>
       <p class="hero-title reveal">수학은 필연입니다.</p>
-      <p class="lede reveal">개념에서 출발해 답에 이르는 수학.<br>KAIST 출신 선생님들과 함께하는 송도의 수학 전문 학원.</p>
+      <p class="lede reveal">원리를 이해하고, 스스로 답에 이르는 수학.<br>KAIST 출신 선생님들이 가르치는 송도 수학 전문 학원.</p>
       <div class="cta reveal">
         <a href="#contact" class="pill pill-lg">상담 예약하기</a>
         <a href="#why" class="more">더 알아보기</a>
@@ -401,7 +405,7 @@
           </svg>
           <span class="k">질문</span>
           <h3>모른다고<br>말해도 되는 교실.</h3>
-          <p>질문이 많을수록 실력은 빨리 늡니다.</p>
+          <p>질문하는 만큼 실력이 자랍니다.</p>
         </div>
         <div class="tile w2 reveal">
           <!-- 좌표 위의 한 점 -->
@@ -412,7 +416,7 @@
           </svg>
           <span class="k">진단</span>
           <h3>어디서 막히는지<br>정확하게.</h3>
-          <p>틀린 이유를 찾아야 같은 실수를 끊을 수 있습니다.</p>
+          <p>틀린 이유를 찾아야 같은 실수가 반복되지 않습니다.</p>
         </div>
         <div class="tile w4 reveal">
           <span class="k">연결</span>
@@ -433,7 +437,7 @@
           </svg>
           <span class="k">목표</span>
           <h3>내신과 수능, 둘 다.</h3>
-          <p>학교 시험에서 바로 점수가 되고, 수능까지 그대로 이어지는 실력을 만듭니다.</p>
+          <p>학교 시험에서는 점수로, 수능까지는 실력으로 이어지게 합니다.</p>
         </div>
       </div>
     </div>
@@ -455,7 +459,7 @@
       <div class="reveal">
         <p class="eyebrow">선생님</p>
         <h2>수학을 깊이 공부한<br>선생님들이 가르칩니다.</h2>
-        <p>문제 푸는 요령보다 수학을 보는 눈을 길러 주는 것. 필연수학학원이 가장 중요하게 생각하는 일입니다.</p>
+        <p>요령보다 수학을 보는 눈을 길러 줍니다. 필연수학학원이 가장 중요하게 생각하는 일입니다.</p>
         <div class="counts">
           <div class="count">
             <strong>KAIST</strong>
@@ -586,7 +590,7 @@
     </svg>
     <div class="wrap">
       <h2 class="reveal">시작은 상담부터.</h2>
-      <p class="lede reveal">지금 아이의 수학이 어디에 있는지, 함께 확인해 보세요.</p>
+      <p class="lede reveal">아이의 수학이 지금 어디에 있는지, 함께 확인해 보세요.</p>
       <a href="tel:0328322615" class="phone reveal">032-832-2615</a>
       <a href="tel:01076522615" class="phone2">010-7652-2615</a>
       <div class="cta reveal">
