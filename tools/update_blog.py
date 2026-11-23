@@ -33,6 +33,10 @@ def fetch_posts():
         summary = re.sub(r"<[^>]+>", " ", item.findtext("description", ""))
         summary = re.sub(r"\s+", " ", summary).strip()
         summary = re.sub(r"^안녕하세요\.\s*필연수학학원입니다\.\s*", "", summary)
+        # "~ 안내 드립니다." 같은 첫 문장은 제목과 겹치므로 제거
+        summary = re.sub(r"^[^.]{0,40}안내\s?드립니다\.\s*", "", summary)
+        # 문의 안내 문구(☎ 이하)는 요약에서 뺀다
+        summary = re.sub(r"\s*\*?\s*안내되지 않은 수업.*$", "", summary)
         posts.append({
             "title": title,
             "link": item.findtext("link", "").split("?")[0],
